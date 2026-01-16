@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cálculadora de Préstamos</title>
+</head>
+<body>
+
+    <div class="calculator-container">
+        <div class="calculator-header">
+            <h1>Calculadora de Préstamos</h1>
+        </div>
+
+        <div class="calculator-body">
+            
+            <div class="mb-4">
+                <label for="monto" class="form-label">Monto del Préstamo</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="monto" placeholder="Ejemplo: 1000000" min="0" step="100">
+                    <span class="input-group-text">$</span>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="interes" class="form-label">Tasa de Interes Anual</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="interes" placeholder="Ejemplo: 24" min="1" step="1">
+                    <span class="input-group-text">meses</span>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="monto" class="form-label">Plazo</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="plazo" placeholder="Ejemplo: 12" min="1" step="1">
+                    <span class="input-group-text">Meses</span>
+                </div>
+            </div>
+
+            <button class="btn btn-calculate" id="btnCalcular">Calcular Préstamo</button>
+
+            <div class="error-message" id="errorMessage"></div>
+
+            <div class="results-container" id="resultsContainer">
+                <div class="results-item">
+                    <div class="results-label">Cuota Mensual</div>
+                    <div class="results-value" id="cuotaMensual">$0</div>
+                </div>
+
+                <div class="results-item">
+                    <div class="results-label">Total a Pagar</div>
+                    <div class="results-value" id="totalPagar">$0</div>
+                </div>
+
+                <div class="results-item">
+                    <div class="results-label">Total de Intereses</div>
+                    <div class="results-value" id="totalIntereses">$0</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!--script bootstrap-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+     <script src="js/script.js"></script>
+</body>
+</html>

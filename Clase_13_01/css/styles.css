@@ -1,0 +1,119 @@
+body{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.calculator-container{
+    max-height: 600px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.calculator-header{
+    background: linear-gradient(135 deg, #667eea 0%, #764ba2 100%);
+    color: rgb(113, 149, 96);
+    padding: 30px;
+    text-align: center;
+}
+
+.calculator-header h1{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.calculator-body{
+    padding: 40px;
+}
+
+.form-label{
+    font-weight: 600;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.form-control{
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-control:focus{
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.input-group-text{
+    background: #f8f9fa;
+    border: 2 solid #e0e0e0;
+    border-left: #764ba2;
+    border-right: #667eea;
+    border-radius: 15px ;
+}
+
+.input-group .form-control{
+    border-right: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.btn-calculate{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-calculate:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.results-container{
+    margin-top: 30px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    display: none;
+}
+
+.results-item{
+    padding: 15px;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 10px;
+}
+
+.results-item:last-child{
+    margin-bottom: 0;
+}
+
+.results-label{
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.results-value{
+    font-size: 1.5rem,;
+    font-weight: 700;
+    color: #667eea;
+}
+
+.error-message{
+    display: none;
+    padding: 15px;
+    background: #fee;
+    color: #721c24;
+}
